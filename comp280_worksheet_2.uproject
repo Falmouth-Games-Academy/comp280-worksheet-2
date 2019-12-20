@@ -2,5 +2,12 @@
 	"FileVersion": 3,
 	"EngineAssociation": "{EE3C69F4-4613-41DE-E59B-5AA9812853EB}",
 	"Category": "",
-	"Description": ""
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "comp280_worksheet_2",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
 }
