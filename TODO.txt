@@ -7,6 +7,14 @@
 [ ] Improve AI
 [ ] Add UI images
 -- [ ] ...
+[ ] Finsihed in-game hud layout
+
+[?] Add CCTV cams for when deaded :)
+
+[ ] Cam overlay
+-- [ ] Add Cam area name to cam UI (See CCTV cam ref!)
+-- [ ] Reposition Time (See CCTV cam ref!)
+-- [ ]
 
 [ ] Add Server (python)
 [ ] Add database (python server)
@@ -21,3 +29,11 @@
 
 [ ] Check briefs...
 [ ] DONE!
+
+
+-- Key --  
+[?] Maybe
+[C] Compleat
+[R] Removed
+[WIP] Work in progress
+[ ] Incompleat
