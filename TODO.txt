@@ -1,39 +1,39 @@
 # Pacman-ish To-do
 
-[ ] Finishs Levels (eg lv 1, lv 2, lv 3... where the ghost get faster each round) 
--- [ ] Add next level screen to classic mode
--- [ ] Add pill respawn to FPS mode
-[ ] Add Lives
-[ ] Improve AI
-[ ] Add UI images
--- [ ] ...
-[ ] Finsihed in-game hud layout
-
-[?] Add CCTV cams for when deaded :)
-
-[ ] Cam overlay
--- [ ] Add Cam area name to cam UI (See CCTV cam ref!)
--- [ ] Reposition Time (See CCTV cam ref!)
--- [ ]
-
-[ ] Add Server (python)
-[ ] Add database (python server)
-[ ] POST data to server
--- [ ] collected pills
--- [ ] score
-[ ] PULL data from server
--- [ ] leader board
--- [ ] pill respwan
-
-[ ] Add projectile material  
-
-[ ] Check briefs...
-[ ] DONE!
-
-
--- Key --  
-[?] Maybe
-[C] Compleat
-[R] Removed
-[WIP] Work in progress
-[ ] Incompleat
+[ ] Finishs Levels (eg lv 1, lv 2, lv 3... where the ghost get faster each round)  
+-- [ ] Add next level screen to classic mode  
+-- [ ] Add pill respawn to FPS mode  
+[ ] Add Lives  
+[ ] Improve AI  
+[ ] Add UI images  
+-- [ ] ...  
+[ ] Finsihed in-game hud layout  
+  
+[?] Add CCTV cams for when deaded :)  
+  
+[ ] Cam overlay  
+-- [ ] Add Cam area name to cam UI (See CCTV cam ref!)  
+-- [ ] Reposition Time (See CCTV cam ref!)  
+-- [ ]  
+  
+[ ] Add Server (python)  
+[ ] Add database (python server)  
+[ ] POST data to server  
+-- [ ] collected pills  
+-- [ ] score  
+[ ] PULL data from server  
+-- [ ] leader board  
+-- [ ] pill respwan  
+  
+[ ] Add projectile material    
+  
+[ ] Check briefs...  
+[ ] DONE!  
+  
+  
+-- Key --    
+[?] Maybe  
+[C] Compleat  
+[R] Removed  
+[WIP] Work in progress  
+[ ] Incompleat  
