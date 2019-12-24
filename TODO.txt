@@ -1,19 +1,20 @@
 # Pacman-ish To-do
 
-[ ] Finishs Levels (eg lv 1, lv 2, lv 3... where the ghost get faster each round)  
--- [ ] Add next level screen to classic mode  
+[WIP] Finishs Levels (eg lv 1, lv 2, lv 3... where the ghost get faster each round)  
+-- [C] Add next level to classic mode  
+-- [C] Add next level to fps mode  
 -- [ ] Add pill respawn to FPS mode  
-[ ] Add Lives  
+[C] Add Lives  
 [ ] Improve AI  
-[ ] Add UI images  
+[C] Add UI images  
 -- [ ] ...  
-[ ] Finsihed in-game hud layout  
+[C] Finsihed in-game hud layout  
   
 [?] Add CCTV cams for when deaded :)  
   
-[ ] Cam overlay  
--- [ ] Add Cam area name to cam UI (See CCTV cam ref!)  
--- [ ] Reposition Time (See CCTV cam ref!)  
+[C] Cam overlay  
+-- [C] Add Cam area name to cam UI (See CCTV cam ref!)  
+-- [C] Reposition Time (See CCTV cam ref!)  
 -- [ ]  
   
 [ ] Add Server (python)  
