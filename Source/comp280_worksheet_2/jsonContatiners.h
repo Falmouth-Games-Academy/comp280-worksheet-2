@@ -13,6 +13,7 @@ struct FJsonScore
 {
 	GENERATED_BODY()
 
+	FJsonScore(){}
 	FJsonScore( FString mode, int gKills, int pCollected, int lv, int t, int scr) {
 	
 		levelMode = mode;

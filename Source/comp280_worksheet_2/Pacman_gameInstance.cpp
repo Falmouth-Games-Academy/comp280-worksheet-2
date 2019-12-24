@@ -1,6 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "Pacman_gameInstance.h"
 #include "Json.h"
 #include "JsonUtilities/Public/JsonUtilities.h"
@@ -12,7 +11,7 @@ void UPacman_gameInstance::SubmitScore(FString levelMode, int ghostKilled, int p
 	FString jsonString;
 
 	GetStringFromStruct<FJsonScore>(scoreContatiner, jsonString);
-
+	
 }
 
 void UPacman_gameInstance::UpdateFPS()
