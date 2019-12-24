@@ -8,10 +8,11 @@ HTTP_Request::HTTP_Request()
 	http = &FHttpModule::Get();
 }
 
-HTTP_Request::HTTP_Request(FString base_url) : HTTP_Request::HTTP_Request()
+HTTP_Request::HTTP_Request(FString base_url, FString root_path) : HTTP_Request::HTTP_Request()
 {
 
 	baseUrl = base_url;
+	rootPath = root_path;
 
 }
 
@@ -23,7 +24,7 @@ TSharedRef<IHttpRequest> HTTP_Request::GetRequestHeaders(FString p_request)
 	if (http == NULL) http = &FHttpModule::Get();
 
 	TSharedRef<IHttpRequest> request = http->CreateRequest();
-	request->SetURL(baseUrl + "/" + p_request);
+	request->SetURL(baseUrl + "/" + rootPath + p_request);
 	// Set headers
 	request->SetHeader(TEXT("User-Agent"), TEXT("X-UnrealEngine-Agent"));
 	request->SetHeader(TEXT("Content-Type"), TEXT("application/json"));

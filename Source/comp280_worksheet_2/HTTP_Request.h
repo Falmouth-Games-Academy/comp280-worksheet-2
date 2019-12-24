@@ -12,13 +12,14 @@ class COMP280_WORKSHEET_2_API HTTP_Request
 {
 public:
 	HTTP_Request();
-	HTTP_Request(FString base_url);
+	HTTP_Request(FString base_url, FString root_path);
 	~HTTP_Request();
 
 private:
 
 	FHttpModule* http;
 	FString baseUrl = "127.0.0.1:8000";
+	FString rootPath = "";
 
 	/// @Param Request: the page to request.
 	TSharedRef<IHttpRequest> GetRequestHeaders(FString p_request);
