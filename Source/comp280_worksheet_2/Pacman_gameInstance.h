@@ -20,7 +20,7 @@ class COMP280_WORKSHEET_2_API UPacman_gameInstance : public UGameInstance
 public:
 
 	UFUNCTION(BlueprintCallable)
-		void SubmitScore(FString levelMode, int ghostKilled, int pillsCollected, int level, int time, int score);
+		void SubmitScore(FString username, FString levelMode, int ghostKilled, int pillsCollected, int level, int time, int score);
 	
 	UFUNCTION(BlueprintCallable)
 		void UpdateFPS();

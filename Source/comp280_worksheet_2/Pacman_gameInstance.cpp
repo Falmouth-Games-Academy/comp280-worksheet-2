@@ -8,12 +8,12 @@
 #include "Http_Request.h"
 #include "Misc/DateTime.h"
 
-void UPacman_gameInstance::SubmitScore(FString levelMode, int ghostKilled, int pillsCollected, int level, int time, int score)
+void UPacman_gameInstance::SubmitScore(FString username, FString levelMode, int ghostKilled, int pillsCollected, int level, int time, int score)
 {
 	
 	FString page = "submit_score";
 
-	FJsonScore scoreContatiner(levelMode, ghostKilled, pillsCollected, level, time, score);
+	FJsonScore scoreContatiner(username, levelMode, ghostKilled, pillsCollected, level, time, score);
 	FString jsonString;
 
 	GetStringFromStruct<FJsonScore>(scoreContatiner, jsonString);
