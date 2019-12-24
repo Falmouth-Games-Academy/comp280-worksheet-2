@@ -4,7 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "Engine/GameInstance.h"
+#include "Runtime/Online/HTTP/Public/Http.h"
 #include "Pacman_gameInstance.generated.h"
+
+class HTTP_Request;
 
 /**
  * 
@@ -23,6 +26,16 @@ public:
 		void UpdateFPS();
 
 private:
+
+	// http
+	FString httpUrl = "127.0.0.1:8000";
+	FString httpRootPath = "pacman/";
+	HTTP_Request* httpRequest;
+
+	void CreateNewHttpRequest();
+
+	void ScoreSubmited_responce(FHttpRequestPtr request, FHttpResponsePtr response, bool wasSuccessful);
+	void UpdateFPS_responce(FHttpRequestPtr request, FHttpResponsePtr response, bool wasSuccessful);
 
 	// json
 	template<typename StructType>
