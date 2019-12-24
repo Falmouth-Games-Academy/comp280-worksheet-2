@@ -11,7 +11,7 @@
 void UPacman_gameInstance::SubmitScore(FString levelMode, int ghostKilled, int pillsCollected, int level, int time, int score)
 {
 	
-	FString page = "SubmitScore";
+	FString page = "submit_score";
 
 	FJsonScore scoreContatiner(levelMode, ghostKilled, pillsCollected, level, time, score);
 	FString jsonString;
