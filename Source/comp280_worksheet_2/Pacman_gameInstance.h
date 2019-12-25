@@ -11,7 +11,7 @@
 class HTTP_Request;
 
 // define delegate so we can get the data back into blueprints, once we have recived it :)
-typedef TMulticastDelegate< void, TArray<FJsonScore> > FLeaderboardDataRecived;
+typedef TMulticastDelegate< void, bool > FLeaderboardDataRecived;
 
 /**
  * 
@@ -19,7 +19,7 @@ typedef TMulticastDelegate< void, TArray<FJsonScore> > FLeaderboardDataRecived;
 UCLASS()
 class COMP280_WORKSHEET_2_API UPacman_gameInstance : public UGameInstance
 {
-	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FLeaderboardDataRecived, TArray<FJsonScore>, leaderboardData);
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FLeaderboardDataRecived, bool, seccessful);
 	GENERATED_BODY()
 
 public:
@@ -57,5 +57,10 @@ private:
 
 	template <typename StructType>
 	void GetStructFromString(FString json, StructType& data_struct);
+
+public:
+	// leaderboard bits
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<FJsonScore> jsonScores;
 
 };

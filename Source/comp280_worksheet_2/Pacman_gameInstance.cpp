@@ -62,6 +62,7 @@ void UPacman_gameInstance::GetLeaderboard_responce(FHttpRequestPtr request, FHtt
 	if (!wasSuccessful && (!request.IsValid() || !response.IsValid()))
 	{
 		GEngine->AddOnScreenDebugMessage(2, 1.0f, FColor::Blue, "Error: Reciving data ???");
+		recivedLeaderboardData.Broadcast(false);
 		return;
 	}
 
@@ -70,7 +71,7 @@ void UPacman_gameInstance::GetLeaderboard_responce(FHttpRequestPtr request, FHtt
 	//responce = SplitString(responce[0], "]");
 	//responce = SplitString(re)
 
-	TArray<FJsonScore> jsonScores;
+	jsonScores.Empty();
 
 	FRegexPattern regexPattern = FRegexPattern("[{]+[ -z | ~]*[}]+");
 	FRegexMatcher regex = FRegexMatcher(regexPattern, response.Get()->GetContentAsString());
@@ -83,7 +84,7 @@ void UPacman_gameInstance::GetLeaderboard_responce(FHttpRequestPtr request, FHtt
 		jsonScores.Add(score);
 	}
 
-	recivedLeaderboardData.Broadcast(jsonScores);
+	recivedLeaderboardData.Broadcast(true);
 
 }
 
