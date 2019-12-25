@@ -83,7 +83,7 @@ void UPacman_gameInstance::GetLeaderboard_responce(FHttpRequestPtr request, FHtt
 		jsonScores.Add(score);
 	}
 
-	leaderboardDataRecived.Broadcast(jsonScores);
+	recivedLeaderboardData.Broadcast(jsonScores);
 
 }
 

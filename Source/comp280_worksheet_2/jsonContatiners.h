@@ -29,13 +29,13 @@ struct FJsonScore
 
 	}
 
-	UPROPERTY() FString username;
-	UPROPERTY() FString level_mode;
-	UPROPERTY()	int ghost_killed;
-	UPROPERTY()	int pills_collected;
-	UPROPERTY()	int level;
-	UPROPERTY()	int time;
-	UPROPERTY()	int score;
-	UPROPERTY()	int date_submitted;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString username;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString level_mode;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)	int ghost_killed;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)	int pills_collected;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)	int level;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)	int time;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)	int score;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)	int date_submitted;
 
 };

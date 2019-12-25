@@ -31,7 +31,7 @@ public:
 		void GetLeaderboard(FString gameModeName);
 
 	UPROPERTY(BlueprintAssignable)
-		FLeaderboardDataRecived leaderboardDataRecived;
+		FLeaderboardDataRecived recivedLeaderboardData;
 
 	UFUNCTION(BlueprintCallable)
 		void UpdateFPS();
