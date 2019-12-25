@@ -5,9 +5,13 @@
 #include "CoreMinimal.h"
 #include "Engine/GameInstance.h"
 #include "Runtime/Online/HTTP/Public/Http.h"
+#include "jsonContatiners.h"
 #include "Pacman_gameInstance.generated.h"
 
 class HTTP_Request;
+
+// define delegate so we can get the data back into blueprints, once we have recived it :)
+typedef TMulticastDelegate< void, TArray<FJsonScore> > FLeaderboardDataRecived;
 
 /**
  * 
@@ -15,6 +19,7 @@ class HTTP_Request;
 UCLASS()
 class COMP280_WORKSHEET_2_API UPacman_gameInstance : public UGameInstance
 {
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FLeaderboardDataRecived, TArray<FJsonScore>, leaderboardData);
 	GENERATED_BODY()
 
 public:
@@ -22,6 +27,12 @@ public:
 	UFUNCTION(BlueprintCallable)
 		void SubmitScore(FString username, FString levelMode, int ghostKilled, int pillsCollected, int level, int time, int score);
 	
+	UFUNCTION(BlueprintCallable)
+		void GetLeaderboard(FString gameModeName);
+
+	UPROPERTY(BlueprintAssignable)
+		FLeaderboardDataRecived leaderboardDataRecived;
+
 	UFUNCTION(BlueprintCallable)
 		void UpdateFPS();
 
@@ -35,7 +46,10 @@ private:
 	void CreateNewHttpRequest();
 
 	void ScoreSubmited_responce(FHttpRequestPtr request, FHttpResponsePtr response, bool wasSuccessful);
+	void GetLeaderboard_responce(FHttpRequestPtr request, FHttpResponsePtr response, bool wasSuccessful);
 	void UpdateFPS_responce(FHttpRequestPtr request, FHttpResponsePtr response, bool wasSuccessful);
+
+	TArray<FString> SplitString(FString strToSplit, FString chr);
 
 	// json
 	template<typename StructType>

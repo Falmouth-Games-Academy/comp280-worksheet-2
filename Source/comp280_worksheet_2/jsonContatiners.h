@@ -9,7 +9,8 @@
 /**
  * 
  */
-USTRUCT()
+
+USTRUCT(BlueprintType)
 struct FJsonScore
 {
 	GENERATED_BODY()
