@@ -79,7 +79,7 @@ void UPacman_gameInstance::GetLeaderboard_responce(FHttpRequestPtr request, FHtt
 
 	jsonScores.Empty();
 
-	FRegexPattern regexPattern = FRegexPattern("[{]+[ -z | ~]*[}]+");
+	FRegexPattern regexPattern = FRegexPattern("[{]+[ -z | ~]*[^\\[\\]][}]+");
 	FRegexMatcher regex = FRegexMatcher(regexPattern, response.Get()->GetContentAsString());
 
 	while (regex.FindNext())
