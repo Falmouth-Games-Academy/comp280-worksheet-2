@@ -62,6 +62,11 @@ void UPacman_gameInstance::GetLeaderboard_responce(FHttpRequestPtr request, FHtt
 
 	if (!wasSuccessful && (!request.IsValid() || !response.IsValid()))
 	{
+		if (response.IsValid())
+			errorCode = FString::FromInt(response.Get()->GetResponseCode());
+		else
+			errorCode = "Faild to connect to server...";
+
 		GEngine->AddOnScreenDebugMessage(2, 1.0f, FColor::Blue, "Error: Reciving data ???");
 		recivedLeaderboardData.Broadcast(false);
 		return;

@@ -66,4 +66,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<FJsonScore> jsonScores;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString errorCode = "???";
 };
