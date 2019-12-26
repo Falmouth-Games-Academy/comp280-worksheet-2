@@ -61,6 +61,9 @@ private:
 public:
 	// leaderboard bits
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString leaderboard_gameMode_name = "classic";
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<FJsonScore> jsonScores;
 
 };

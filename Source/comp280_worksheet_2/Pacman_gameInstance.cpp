@@ -46,6 +46,7 @@ void UPacman_gameInstance::GetLeaderboard(FString gameModeName)
 {
 
 	FString page = "leaderboard?game_mode=" + gameModeName;
+	leaderboard_gameMode_name = gameModeName;
 
 	CreateNewHttpRequest();
 	TSharedRef<IHttpRequest> request = httpRequest->GET_Request(page);
