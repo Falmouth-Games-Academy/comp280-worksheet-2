@@ -51,8 +51,9 @@ public:
 	~UBPJsonScore() {}
 
 	UFUNCTION(BlueprintCallable)
-	void SetData(FJsonScore jsonScore) {
+	void SetData(FJsonScore jsonScore, int lb_id) {
 		// TODO: these need to match nameing scheme on python server :)
+		id = lb_id;
 		username = jsonScore.username;
 		level_mode = jsonScore.level_mode;
 		ghost_killed = jsonScore.ghost_killed;
@@ -64,6 +65,7 @@ public:
 
 	}
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite) int id;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString username;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString level_mode;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)	int ghost_killed;
