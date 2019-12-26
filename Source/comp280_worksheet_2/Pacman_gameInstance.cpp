@@ -72,11 +72,6 @@ void UPacman_gameInstance::GetLeaderboard_responce(FHttpRequestPtr request, FHtt
 		return;
 	}
 
-	// get only the responce responce data
-	//TArray<FString> responce = SplitString(response.Get()->GetContentAsString(), "[");
-	//responce = SplitString(responce[0], "]");
-	//responce = SplitString(re)
-
 	jsonScores.Empty();
 
 	FRegexPattern regexPattern = FRegexPattern("[{]+[ -z | ~]*[^\\[\\]][}]+");
