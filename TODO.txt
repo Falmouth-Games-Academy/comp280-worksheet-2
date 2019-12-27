@@ -9,22 +9,25 @@
 [C] Add UI images  
 -- [ ] ...  
 [C] Finsihed in-game hud layout  
-  
+[ ] when returning to main menu after submited score select leaderboard to be displayed
+
 [?] Add CCTV cams for when deaded :)  
+[C] Give main menu Background  
   
 [C] Cam overlay  
 -- [C] Add Cam area name to cam UI (See CCTV cam ref!)  
 -- [C] Reposition Time (See CCTV cam ref!)  
 -- [ ]  
   
-[ ] Add Server (python)  
-[ ] Add database (python server)  
-[ ] POST data to server  
--- [ ] collected pills  
--- [ ] score  
-[ ] PULL data from server  
--- [ ] leader board  
--- [ ] pill respwan  
+[C] Add Server (python)  
+[C] Add database (python server)  
+[C] POST data to server  
+-- [R] collected pills  
+-- [C] score
+----[C] Order data  
+[C] PULL data from server  
+-- [C] leader board  
+-- [R] pill respwan  
   
 [ ] Add projectile material    
   
