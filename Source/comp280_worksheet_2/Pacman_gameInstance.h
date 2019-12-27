@@ -59,9 +59,16 @@ private:
 	void GetStructFromString(FString json, StructType& data_struct);
 
 public:
+	// used to sellected with main menu to be displayed on loaded (main menu, leaderboard or options).
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString menuToLoad = "main";
+
 	// leaderboard bits
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FString leaderboard_gameMode_name = "classic";
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString leaderboard_gameMode_toLoad = "classic";
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<FJsonScore> jsonScores;
