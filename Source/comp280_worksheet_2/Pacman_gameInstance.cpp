@@ -89,12 +89,12 @@ void UPacman_gameInstance::GetLeaderboard_responce(FHttpRequestPtr request, FHtt
 
 }
 
-void UPacman_gameInstance::UpdateFPS()
+void UPacman_gameInstance::LoadGameSettings()
 {
 
 }
 
-void UPacman_gameInstance::UpdateFPS_responce(FHttpRequestPtr request, FHttpResponsePtr response, bool wasSuccessful) 
+void UPacman_gameInstance::LoadGameSettings_responce(FHttpRequestPtr request, FHttpResponsePtr response, bool wasSuccessful) 
 {
 
 }

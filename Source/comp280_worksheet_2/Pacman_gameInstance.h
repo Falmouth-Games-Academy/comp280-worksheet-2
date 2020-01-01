@@ -34,7 +34,7 @@ public:
 		FLeaderboardDataRecived recivedLeaderboardData;
 
 	UFUNCTION(BlueprintCallable)
-		void UpdateFPS();
+		void LoadGameSettings();
 
 private:
 
@@ -47,7 +47,7 @@ private:
 
 	void ScoreSubmited_responce(FHttpRequestPtr request, FHttpResponsePtr response, bool wasSuccessful);
 	void GetLeaderboard_responce(FHttpRequestPtr request, FHttpResponsePtr response, bool wasSuccessful);
-	void UpdateFPS_responce(FHttpRequestPtr request, FHttpResponsePtr response, bool wasSuccessful);
+	void LoadGameSettings_responce(FHttpRequestPtr request, FHttpResponsePtr response, bool wasSuccessful);
 
 	// json
 	template<typename StructType>
