@@ -49,8 +49,6 @@ private:
 	void GetLeaderboard_responce(FHttpRequestPtr request, FHttpResponsePtr response, bool wasSuccessful);
 	void UpdateFPS_responce(FHttpRequestPtr request, FHttpResponsePtr response, bool wasSuccessful);
 
-	TArray<FString> SplitString(FString strToSplit, FString chr);
-
 	// json
 	template<typename StructType>
 	void GetStringFromStruct(StructType data_struct, FString& outputString);

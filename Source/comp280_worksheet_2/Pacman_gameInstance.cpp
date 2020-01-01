@@ -99,26 +99,6 @@ void UPacman_gameInstance::UpdateFPS_responce(FHttpRequestPtr request, FHttpResp
 
 }
 
-TArray<FString> UPacman_gameInstance::SplitString(FString strToSplit, FString chr)
-{
-
-	bool searching = true;
-	int index = 0;
-
-	TArray<FString> splitStrings;
-
-	FString* LHS = new FString();
-
-	while (searching)
-	{
-		searching = strToSplit.Split(chr, LHS, &strToSplit);
-		splitStrings.Add(*LHS);
-	}
-
-	return splitStrings;
-
-}
-
 #pragma region HTTP
 
 void UPacman_gameInstance::CreateNewHttpRequest()
