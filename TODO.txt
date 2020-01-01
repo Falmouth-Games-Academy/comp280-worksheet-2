@@ -9,7 +9,7 @@
 [C] Add UI images  
 -- [ ] ...  
 [C] Finsihed in-game hud layout  
-[ ] when returning to main menu after submited score select leaderboard to be displayed
+[C] when returning to main menu after submited score select leaderboard to be displayed
 
 [?] Add CCTV cams for when deaded :)  
 [C] Give main menu Background  
@@ -30,9 +30,30 @@
 -- [R] pill respwan  
   
 [ ] Add projectile material    
-  
+
+----------------------------------------------------------------------------------------------
+
 [ ] Check briefs...  
+-- [ ] Update Readme.md for each module  
+-- [ ] Networking  
+---- [C] HTTP Client/Server  
+---- [C] Using JSON to send data from server toclient  
+---- [C] SQLite Testbed to create retrieve, update, delete and store records  
+---- [C] Python Server to communicate with unreal  
+-- [WIP] AI  
+---- [ ] Improve AI (TODO dupe)  
+-- [WIP] Graphics  
+---- [ ] Add projectile material (Fire ball/lazer or somthink) (TODO dupe)  
+-- [ ] Interfaces & Interaction  
+---- [ ] heuristic evaluation  
+---- [ ] Design HUD for FPS in XD or (web app)  
+---- [ ] Health bar (unreal)  
+---- [ ] Controls window (unreal)  
+
+
+
 [ ] DONE!  
+-- [ ] Build server and client using pyInstall.  
   
   
 -- Key --    
