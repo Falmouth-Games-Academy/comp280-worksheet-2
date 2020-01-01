@@ -11,7 +11,7 @@
 class HTTP_Request;
 
 // define delegate so we can get the data back into blueprints, once we have recived it :)
-typedef TMulticastDelegate< void, bool > FLeaderboardDataRecived;
+typedef TMulticastDelegate< void, bool > FDataRecived;
 
 /**
  * 
@@ -19,7 +19,7 @@ typedef TMulticastDelegate< void, bool > FLeaderboardDataRecived;
 UCLASS()
 class COMP280_WORKSHEET_2_API UPacman_gameInstance : public UGameInstance
 {
-	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FLeaderboardDataRecived, bool, seccessful);
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FDataRecived, bool, seccessful);
 	GENERATED_BODY()
 
 public:
@@ -31,7 +31,10 @@ public:
 		void GetLeaderboard(FString gameModeName);
 
 	UPROPERTY(BlueprintAssignable)
-		FLeaderboardDataRecived recivedLeaderboardData;
+		FDataRecived recivedGameSettingData;
+
+	UPROPERTY(BlueprintAssignable)
+		FDataRecived recivedLeaderboardData;
 
 	UFUNCTION(BlueprintCallable)
 		void LoadGameSettings();

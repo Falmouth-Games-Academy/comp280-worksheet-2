@@ -96,7 +96,13 @@ void UPacman_gameInstance::LoadGameSettings()
 
 void UPacman_gameInstance::LoadGameSettings_responce(FHttpRequestPtr request, FHttpResponsePtr response, bool wasSuccessful) 
 {
+	if (!wasSuccessful && (!request.IsValid() || !response.IsValid()))
+	{
+		recivedGameSettingData.Broadcast(false);
+		return;
+	}
 
+	recivedGameSettingData.Broadcast(true);
 }
 
 #pragma region HTTP
