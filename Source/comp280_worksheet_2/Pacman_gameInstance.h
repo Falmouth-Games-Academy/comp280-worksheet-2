@@ -37,7 +37,7 @@ public:
 		FDataRecived recivedLeaderboardData;
 
 	UFUNCTION(BlueprintCallable)
-		void LoadGameSettings();
+		void LoadGameSettings(FString settingName = "ALL");
 
 private:
 
@@ -73,6 +73,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<FJsonScore> jsonScores;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TMap<FString, FJsonGameSetting> gameSettings;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FString errorCode = "???";

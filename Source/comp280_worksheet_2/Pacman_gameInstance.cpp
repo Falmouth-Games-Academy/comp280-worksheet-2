@@ -74,6 +74,7 @@ void UPacman_gameInstance::GetLeaderboard_responce(FHttpRequestPtr request, FHtt
 
 	jsonScores.Empty();
 
+	// Extract each score from the responce json, ignoring the status
 	FRegexPattern regexPattern = FRegexPattern("[{]+[ -z | ~]*[^\\[\\]][}]+");
 	FRegexMatcher regex = FRegexMatcher(regexPattern, response.Get()->GetContentAsString());
 
@@ -89,9 +90,16 @@ void UPacman_gameInstance::GetLeaderboard_responce(FHttpRequestPtr request, FHtt
 
 }
 
-void UPacman_gameInstance::LoadGameSettings()
+void UPacman_gameInstance::LoadGameSettings(FString settingName /* = "ALL"*/)
 {
+	FString page = "settings?name=" + settingName;
 
+	CreateNewHttpRequest();
+	TSharedRef<IHttpRequest> request = httpRequest->GET_Request(page);
+	request->OnProcessRequestComplete().BindUObject(this, &UPacman_gameInstance::LoadGameSettings_responce);
+	httpRequest->SendRequest(request);
+
+	GEngine->AddOnScreenDebugMessage(2, 1.0f, FColor::Blue, "Request sent");
 }
 
 void UPacman_gameInstance::LoadGameSettings_responce(FHttpRequestPtr request, FHttpResponsePtr response, bool wasSuccessful) 
@@ -100,6 +108,18 @@ void UPacman_gameInstance::LoadGameSettings_responce(FHttpRequestPtr request, FH
 	{
 		recivedGameSettingData.Broadcast(false);
 		return;
+	}
+
+	// Extract each score from the responce json, ignoring the status
+	FRegexPattern regexPattern = FRegexPattern("[{]+[ -z | ~]*[^\\[\\]][}]+");
+	FRegexMatcher regex = FRegexMatcher(regexPattern, response.Get()->GetContentAsString());
+
+	while (regex.FindNext())
+	{
+		FJsonGameSetting setting;
+		GetStructFromString<FJsonGameSetting>(regex.GetCaptureGroup(0), setting);
+		UE_LOG(LogTemp, Warning, TEXT("in data %s"), *regex.GetCaptureGroup(0));
+		gameSettings.Add(setting.setting_name, setting);
 	}
 
 	recivedGameSettingData.Broadcast(true);
