@@ -1,17 +1,10 @@
 # comp280 worksheets
 ##### 1 Networking | 2 AI | 3 Graphics | 4 Interfaces & Interaction  
 
-#### Table of Contents
-
-**1) [Networking](#1.-Networking)**
-
-**2) [AI](#2.-AI)**
-
-**3) [Graphics](#3.-Graphics)**
-
-**4) [Interfaces & Interaction](#4.-Interfaces-&-Interaction)**
-
-**5) [Software, tools and assets](#Software,-tools-and-assets-used)**
+#### Git Repos
+Pacman-ish game:    https://github.com/Ashley-Sands/comp280-worksheet-2  
+Python, Web Sever:  https://github.com/Ashley-Sands/Comp-280-PythonServer  
+SQLite Web Client:  https://github.com/Ashley-Sands/SQLightExplorer  
 
 ---
 
@@ -27,8 +20,8 @@
 ## Software, tools and assets used
 
 #### Web Server & Client
-To run the web Sever and Client from source use python 3.7 (LIST DEPENDCIES HERE)  
-The server and client have been built using PyInstall (INSERT VERSION NUMBER HERE)  
+To run the web Sever and Client from source use python 3.7 with PyQt5 (v5.13.2) installed  
+The server and client have been built using PyInstall 3.5
 
 #### Pacman-ish (Game)
 Requires Unreal Engine version 4.22.3
@@ -40,3 +33,6 @@ Requires Unreal Engine version 4.22.3
 ["Designed Element, Ghostly Breath, Pulsating, Inhale and Exhale, Soul Spirit or Spectre"](https://www.zapsplat.com/music/designed-element-ghostly-breath-pulsating-inhale-and-exhale-soul-spirit-or-spectre/), zap splat standard license  
 
 This project use sound fx from [ZapSplat](https://www.zapsplat.com)
+
+## Git Repos
+ 
