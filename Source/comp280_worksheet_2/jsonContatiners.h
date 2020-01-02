@@ -88,27 +88,3 @@ struct FJsonGameSetting {
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) float number_value;
 
 };
-
-UCLASS(BlueprintType)
-class COMP280_WORKSHEET_2_API UBPJsonGameSettings : public UObject
-{
-
-	GENERATED_BODY()
-
-public :
-	UBPJsonGameSettings() {};
-	~UBPJsonGameSettings() {};
-
-	UFUNCTION(BlueprintCallable)
-	void SetData(FJsonGameSetting data)
-	{
-		setting_name = data.setting_name;
-		string_value = data.string_value;
-		number_value = data.number_value;
-	}
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString setting_name;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString string_value;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) float number_value;
-
-};
