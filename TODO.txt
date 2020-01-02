@@ -1,9 +1,9 @@
 # Pacman-ish To-do
 
-[WIP] Finishs Levels (eg lv 1, lv 2, lv 3... where the ghost get faster each round)  
+[C] Finishs Levels (eg lv 1, lv 2, lv 3... where the ghost get faster each round)  
 -- [C] Add next level to classic mode  
 -- [C] Add next level to fps mode  
--- [ ] Add pill respawn to FPS mode  
+-- [C] Add pill respawn to FPS mode  
 [C] Add Lives  
 [ ] Improve AI  
 [C] Add UI images  
@@ -11,7 +11,7 @@
 [C] Finsihed in-game hud layout  
 [C] when returning to main menu after submited score select leaderboard to be displayed
 
-[?] Add CCTV cams for when deaded :)  
+[R] Add CCTV cams for when deaded :)  
 [C] Give main menu Background  
   
 [C] Cam overlay  
@@ -35,15 +35,16 @@
 
 [ ] Check briefs...  
 -- [ ] Update Readme.md for each module  
--- [ ] Networking  
+-- [C] Networking  
 ---- [C] HTTP Client/Server  
 ---- [C] Using JSON to send data from server toclient  
 ---- [C] SQLite Testbed to create retrieve, update, delete and store records  
 ---- [C] Python Server to communicate with unreal  
+---- [C] Add Game settings from server
 -- [WIP] AI  
 ---- [ ] Improve AI (TODO dupe)  
 -- [WIP] Graphics  
----- [ ] Add projectile material (Fire ball/lazer or somthink) (TODO dupe)  
+---- [C] Add projectile material (Fire ball/lazer or somthink) (TODO dupe)  
 -- [ ] Interfaces & Interaction  
 ---- [ ] heuristic evaluation  
 ---- [ ] Design HUD for FPS in XD or (web app)  
