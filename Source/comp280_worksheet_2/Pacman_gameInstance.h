@@ -79,4 +79,11 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FString errorCode = "???";
+
+	UFUNCTION(BlueprintCallable)
+		bool GetSettingNumberValue(FString settingName, float& value);
+
+	UFUNCTION(BlueprintCallable)
+		bool GetSettingStringValue(FString settingName, FString& value);
+
 };

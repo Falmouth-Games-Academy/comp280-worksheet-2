@@ -125,6 +125,29 @@ void UPacman_gameInstance::LoadGameSettings_responce(FHttpRequestPtr request, FH
 	recivedGameSettingData.Broadcast(true);
 }
 
+bool UPacman_gameInstance::GetSettingNumberValue(FString settingName, float& value)
+{
+	if (gameSettings.Contains(settingName))
+	{
+		value = gameSettings.Find(settingName)->number_value;
+		return true;
+	}
+
+	return false;
+}
+
+bool UPacman_gameInstance::GetSettingStringValue(FString settingName, FString& value)
+{
+
+	if (gameSettings.Contains(settingName))
+	{
+		value = gameSettings.Find(settingName)->string_value;
+		return true;
+	}
+
+	return false;
+}
+
 #pragma region HTTP
 
 void UPacman_gameInstance::CreateNewHttpRequest()
