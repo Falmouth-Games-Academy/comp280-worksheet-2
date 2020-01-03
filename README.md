@@ -14,15 +14,17 @@
 
 ## 1. Networking
 Pacman-ish uses a python http server to store and load leader board and game 
-balance data in a sqlite database. [see repo](https://github.com/Ashley-Sands/Comp-280-PythonServer)
+balance data from a sqlite database. [see repo](https://github.com/Ashley-Sands/Comp-280-PythonServer)
 (the database can be viewed using the [AMSqlite tool](https://github.com/Ashley-Sands/SQLightExplorer))  
 ###### The Code
 Sending and requesting data to and from the sever is handled by   
 ```
 Source\comp280_worksheet_2\Pacman_gameInstance.h
 Source\comp280_worksheet_2\Pacman_gameInstance.cpp
+Source\comp280_worksheet_2\Http_Request.h
+Source\comp280_worksheet_2\Http_Request.cpp
 ```
-The server sends data to the game in json format which is then converted into structs
+The server sends and receives data in json format which is then converted to/from structs
 ```
 Source\comp280_worksheet_2\jsonContatiners.h
 ```
