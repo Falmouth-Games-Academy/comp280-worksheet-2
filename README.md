@@ -2,12 +2,12 @@
 
 ###### Table of contents
 
-1. [Networking](#1.-Networking)  
-2. [AI](#AI)  
-3. [Graphics](#Graphics)  
-4. [Interfaces & Interaction](#Interfaces-&-Interaction)   
-5. [Software, tools and assets used](#Software,-tools-and-assets-used)
-6. [Git Repo's](#git-repos)
+1. [Networking](#1-Networking)  
+2. [AI](#2-AI)  
+3. [Graphics](#3-Graphics)  
+4. [Interfaces & Interaction](#4-Interfaces--Interaction)   
+5. [Software, tools and assets used](#5-Software-tools-and-assets-used)
+6. [Git Repo's](#6-git-repos)
 
 
 ---
