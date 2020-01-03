@@ -7,7 +7,6 @@
 [C] Add Lives  
 [ ] Improve AI  
 [C] Add UI images  
--- [ ] ...  
 [C] Finsihed in-game hud layout  
 [C] when returning to main menu after submited score select leaderboard to be displayed
 
@@ -16,8 +15,7 @@
   
 [C] Cam overlay  
 -- [C] Add Cam area name to cam UI (See CCTV cam ref!)  
--- [C] Reposition Time (See CCTV cam ref!)  
--- [ ]  
+-- [C] Reposition Time (See CCTV cam ref!)   
   
 [C] Add Server (python)  
 [C] Add database (python server)  
@@ -29,12 +27,12 @@
 -- [C] leader board  
 -- [R] pill respwan  
   
-[ ] Add projectile material    
+[C] Add projectile material    
 
 ----------------------------------------------------------------------------------------------
 
 [ ] Check briefs...  
--- [ ] Update Readme.md for each module  
+-- [WIP] Update Readme.md for each module  
 -- [C] Networking  
 ---- [C] HTTP Client/Server  
 ---- [C] Using JSON to send data from server toclient  
@@ -53,8 +51,8 @@
 
 
 
-[ ] DONE!  
--- [ ] Build server and client using pyInstall.  
+[C] DONE!  
+-- [C] Build server and client using pyInstall.  
   
   
 -- Key --    
