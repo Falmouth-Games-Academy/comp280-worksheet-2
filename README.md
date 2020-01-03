@@ -84,6 +84,6 @@ Requires Unreal Engine version 4.22.3
 This project uses sound fx from [ZapSplat](https://www.zapsplat.com)
 
 ## 6. Git Repos
-Pacman-ish game:    [https://github.com/Ashley-Sands/comp280-worksheet-2]()  
-Python, Web Sever:  [https://github.com/Ashley-Sands/Comp-280-PythonServer]()  
-SQLite Web Client:  [https://github.com/Ashley-Sands/SQLightExplorer]()  
+Pacman-ish game:    [https://github.com/Ashley-Sands/comp280-worksheet-2](https://github.com/Ashley-Sands/comp280-worksheet-2)  
+Python, Web Sever:  [https://github.com/Ashley-Sands/Comp-280-PythonServer](https://github.com/Ashley-Sands/Comp-280-PythonServer)  
+SQLite Web Client:  [https://github.com/Ashley-Sands/SQLightExplorer](https://github.com/Ashley-Sands/SQLightExplorer)  
