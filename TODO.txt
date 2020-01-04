@@ -5,7 +5,7 @@
 -- [C] Add next level to fps mode  
 -- [C] Add pill respawn to FPS mode  
 [C] Add Lives  
-[ ] Improve AI  
+[C] Improve AI
 [C] Add UI images  
 [C] Finsihed in-game hud layout  
 [C] when returning to main menu after submited score select leaderboard to be displayed
@@ -39,17 +39,15 @@
 ---- [C] SQLite Testbed to create retrieve, update, delete and store records  
 ---- [C] Python Server to communicate with unreal  
 ---- [C] Add Game settings from server
--- [WIP] AI  
----- [ ] Improve AI (TODO dupe)  
--- [WIP] Graphics  
+-- [C] AI
+---- [C] Improve AI (TODO dupe)
+-- [C] Graphics
 ---- [C] Add projectile material (Fire ball/lazer or somthink) (TODO dupe)  
--- [ ] Interfaces & Interaction  
----- [ ] heuristic evaluation  
----- [ ] Design HUD for FPS in XD or (web app)  
----- [ ] Health bar (unreal)  
----- [ ] Controls window (unreal)  
-
-
+-- [C] Interfaces & Interaction
+---- [C] heuristic evaluation
+---- [C] Design HUD for FPS in XD or (web app)
+---- [R] Health bar (unreal)
+---- [C] Controls window (unreal)
 
 [C] DONE!  
 -- [C] Build server and client using pyInstall.  

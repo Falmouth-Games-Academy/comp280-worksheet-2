@@ -64,8 +64,34 @@ New Materials (By Game Mode)
 ```\Content\materials\Pill_Trip```
 
 ## 4. Interfaces & Interaction
-WIP
+The Menus and HUD have been implemented and enhance based on the initial 
+heuristic evaluation.  
+(There is no health bar! since its not really applicable to the game)  
+Furthermore there has been a 'Game Over' screen added where the user can 
+input there name with error prevention implemented to prevent the user from
+submitting a score without entering a name.
+#### Menus
+- Main menu  
+```\Content\MainMenuUI\BP_MainMenu_UI```
+- Leader board  
+```\Content\MainMenuUI\BP_leaderboard```
+- Pause menu  
+```\Content\MainMenuUI\BP_PauseMenu_UI```
+- Controls  
+```\Content\MainMenuUI\BP_Controls_UI```
+- Game over screen  
+```\Content\MainMenuUI\BP_GameOver_UI```
 
+#### Classic Mode HUD
+- HUD (ALL)  
+```\Content\ThirdPersonBP\Blueprints\HudWidget```
+#### FPS Mode HUD
+- Radar HUD  
+```\Content\FirstPersonBP\Map\ui_miniMap```
+- Ammo HUD  
+```\Content\FirstPersonBP\Blueprints\ui_ammo```
+- cam overlay  
+```\Content\FirstPersonBP\Blueprints\ui_can_overlay```
 ---
 
 ## 5. Software, tools and assets used
@@ -76,6 +102,9 @@ The server and client have been built using PyInstall 3.5
 
 #### Pacman-ish (Game)
 Requires Unreal Engine version 4.22.3
+
+#### UI/UX Prototype
+Adobe XD
 
 #### Used Assets from the web
 ["Ghost" 3D model by Luca Perencin](https://poly.google.com/view/6tcLAzFt-A2), licensed under CC-BY.  
