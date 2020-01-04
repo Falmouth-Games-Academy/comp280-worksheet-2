@@ -1,0 +1,61 @@
+# Pacman-ish To-do
+
+[C] Finishs Levels (eg lv 1, lv 2, lv 3... where the ghost get faster each round)  
+-- [C] Add next level to classic mode  
+-- [C] Add next level to fps mode  
+-- [C] Add pill respawn to FPS mode  
+[C] Add Lives  
+[C] Improve AI
+[C] Add UI images  
+[C] Finsihed in-game hud layout  
+[C] when returning to main menu after submited score select leaderboard to be displayed
+
+[R] Add CCTV cams for when deaded :)  
+[C] Give main menu Background  
+  
+[C] Cam overlay  
+-- [C] Add Cam area name to cam UI (See CCTV cam ref!)  
+-- [C] Reposition Time (See CCTV cam ref!)   
+  
+[C] Add Server (python)  
+[C] Add database (python server)  
+[C] POST data to server  
+-- [R] collected pills  
+-- [C] score
+----[C] Order data  
+[C] PULL data from server  
+-- [C] leader board  
+-- [R] pill respwan  
+  
+[C] Add projectile material    
+
+----------------------------------------------------------------------------------------------
+
+[ ] Check briefs...  
+-- [WIP] Update Readme.md for each module  
+-- [C] Networking  
+---- [C] HTTP Client/Server  
+---- [C] Using JSON to send data from server toclient  
+---- [C] SQLite Testbed to create retrieve, update, delete and store records  
+---- [C] Python Server to communicate with unreal  
+---- [C] Add Game settings from server
+-- [C] AI
+---- [C] Improve AI (TODO dupe)
+-- [C] Graphics
+---- [C] Add projectile material (Fire ball/lazer or somthink) (TODO dupe)  
+-- [C] Interfaces & Interaction
+---- [C] heuristic evaluation
+---- [C] Design HUD for FPS in XD or (web app)
+---- [R] Health bar (unreal)
+---- [C] Controls window (unreal)
+
+[C] DONE!  
+-- [C] Build server and client using pyInstall.  
+  
+  
+-- Key --    
+[?] Maybe  
+[C] Compleat  
+[R] Removed  
+[WIP] Work in progress  
+[ ] Incompleat  
