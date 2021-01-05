@@ -1,7 +1,22 @@
 # comp280-worksheet-2
 Base repository for COMP280 worksheet 2
 
+## Ghosts
+There are 4 Ghosts: Barry, Garry, Larry, Scott
+
+__Barry__: Roams around the level, chases the player when found, runs away when pills are consumed
+
+__Garry__: Roams around the Power Pills in the level, chases the player when found, runs away when pills are consumed
+
+__Larry__: Roams around the level, chases the player when found, runs away when pills are consumed (did have plans to make Larry invisble and roam between the Power Pills, similarly to Garry, but couldn't figure out the logic in time)
+
+__Scott__: Roams around the level, chases the player when found, runs away when pills are consumed
+
+## Additional Details
+This project also utilises Nav Modifiers (NavArea's) and NavigationQueryFilter's. These have an affect on the AI's movement. They allow to add aditional costs to the AI's pathfinding (making the movement slightly different than the regular A* pathfinding).
+
+
+## Sources
 This project requires Unreal Engine version 4.22.3.
 
 This project uses the ["Ghost" 3D model by Luca Perencin](https://poly.google.com/view/6tcLAzFt-A2), licensed under CC-BY.
-
