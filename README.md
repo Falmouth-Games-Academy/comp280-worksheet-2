@@ -16,9 +16,7 @@ _Scott_: Roams around the level, chases the player when found, runs away when pi
 This project also utilises Nav Modifiers (NavArea's) and NavigationQueryFilter's. These have an affect on the AI's movement. They allow to add aditional costs to the AI's pathfinding (making the movement slightly different than the regular A* pathfinding).
 
 
-
-
+## Sources
 This project requires Unreal Engine version 4.22.3.
 
 This project uses the ["Ghost" 3D model by Luca Perencin](https://poly.google.com/view/6tcLAzFt-A2), licensed under CC-BY.
-
